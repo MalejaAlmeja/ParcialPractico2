@@ -1,0 +1,14 @@
+<div class="container py-4" style="background-color: #adc3d9;">
+  <div class="row">
+    <div
+      *ngFor="let a of aerolineas"
+      class="col-12 col-sm-6 col-md-4 mb-4">
+      <div class="card h-50" [style.background-color]="a.identityColor">
+        <div class="card-body">
+          <h5 class="card-title">{{ a.airlineName }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

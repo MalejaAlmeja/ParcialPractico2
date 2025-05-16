@@ -1,3 +1,15 @@
-<p>
-  aerolinea-detail1 works!
-</p>
+<div class="container-fluid">
+  <p class="h3 p-3">{{ aerolineaDetail.airlineName}}</p>
+  <div class="row">
+    <div class="col-4">
+      <p>País:{{aerolineaDetail.country}}</p>
+      <p>Ciudad:{{aerolineaDetail.city}}</p>
+      <p>Dirección:{{aerolineaDetail.address}}</p>
+      <p>Color:{{aerolineaDetail.identityColor}}</p>
+      <p>Slogan:{{aerolineaDetail.slogan}}</p>
+      <div class="button" style="background-color: brown;" (click)=onSelect(aerolineaDetail)>Ver Vuelos</div>
+    </div>
+    
+  </div>
+</div>
+

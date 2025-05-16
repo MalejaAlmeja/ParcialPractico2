@@ -5,8 +5,7 @@ import { AerolineaListComponent } from './aerolinea-list/aerolinea-list.componen
 import { AerolineaDetail1Component } from './aerolinea-detail1/aerolinea-detail1.component';
 
 @NgModule({
-  imports: [
-    CommonModule],
+  imports: [CommonModule],
   declarations: [AerolineaDetail2Component, AerolineaDetail1Component, AerolineaListComponent]
 
 })

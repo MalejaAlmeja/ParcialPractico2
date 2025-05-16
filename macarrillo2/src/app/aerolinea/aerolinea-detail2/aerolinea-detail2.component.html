@@ -1,3 +1,34 @@
-<p>
-  aerolinea-detail2 works!
-</p>
+<div class="container-fluid">
+  <p class="h3 p-3">{{ aerolineaDetail.airlineName}}</p>
+  <div class="row">
+    <div class="col-4">
+      <p>País:{{aerolineaDetail.country}}</p>
+      <p>Ciudad:{{aerolineaDetail.city}}</p>
+      <p>Dirección:{{aerolineaDetail.address}}</p>
+      <p>Color:{{aerolineaDetail.identityColor}}</p>
+      <p>Slogan:{{aerolineaDetail.slogan}}</p>
+    </div>
+    <div class="col-8">
+    <div *ngFor="let v of aerolineaDetail.flights">
+      <div class="card h-100">
+        <img
+          [src]="v.image"
+          class="card-img-top"
+          [alt]="v.id"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Vuelo #{{ v.id }}</h5>
+          <p class="card-text">Aeropuerto de llegada{{ v.arrivalAirport }}</p>
+          <p class="card-text">Ciudad de llegada {{ v.arrivalCity }}</p>
+          <p class="card-text">País de llegada{{ v.arrivalCountry }}</p>
+          <p class="card-text">Aeropuerto de salida{{ v.departureAirport }}</p>
+          <p class="card-text">Ciudad de salida: {{ v.departureCity }}</p>
+          <p class="card-text">País de salida: {{ v.departureCountry }}</p>
+          <p class="card-text">Duración: {{ v.flightDuration }}</p>
+        </div>
+      </div>
+          
+    </div>
+    
+  </div>
+</div>

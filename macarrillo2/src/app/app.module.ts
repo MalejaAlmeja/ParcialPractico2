@@ -5,6 +5,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AerolineaModule } from './aerolinea/aerolinea.module';
+import { VueloModule } from './vuelo/vuelo.module';
 
 @NgModule({
   declarations: [		
@@ -14,7 +15,8 @@ import { AerolineaModule } from './aerolinea/aerolinea.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AerolineaModule
+    AerolineaModule,
+    VueloModule
   ],
   providers: [],
   bootstrap: [AppComponent]

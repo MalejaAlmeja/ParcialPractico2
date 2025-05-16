@@ -3,12 +3,21 @@
     <div
       *ngFor="let a of aerolineas"
       class="col-12 col-sm-6 col-md-4 mb-4">
-      <div class="card h-50" [style.background-color]="a.identityColor">
-        <div class="card-body">
+      <div class="card h-100" [style.background-color]="a.identityColor">
+        <div class="card-body" (click)="onSelect(a)">
           <h5 class="card-title">{{ a.airlineName }}</h5>
         </div>
       </div>
     </div>
   </div>
+  <div class="row justify-content-center">
+    <div
+      class="col-12 col-sm-6 col-md-4 mb-4">
+      <div class="card h-150" >
+          <h5 class="card-title">Aerolineas de Los Andes</h5>
+      </div>
+    </div>
+  </div>
+
 </div>
 
